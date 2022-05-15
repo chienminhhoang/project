@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        tr,td{
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let a;
+    a = "<table style=border-collapse:collapse "+";"+"width:300px"+";"+"cellspacing:0px"+ "cellpading:3px>"
+    for (let i = 1; i <=10 ; i++) {
+        a= a+ "<tr>";
+        for (let j = 1; j <=10 ; j++) {
+            a=a +"<td>"+ i * j +"</td>"
+
+        }
+
+    }
+    a = a+ "</table>";
+    document.write(a);
+</script>
+
