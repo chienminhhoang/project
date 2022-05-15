@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <input type= "text" id="a">
+<label for="a">Nhập số a</label>
+
+    <input type= "text" id="b">
+    <label for="b">Nhập số b</label>
+    <input type= "text" id="c">
+    <label for="c">Nhập số c</label>
+    <button onclick ="check()">Check</button><br>
+    <p id="result"></p>
+
+</body>
+</html>
+<script>
+    function check() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        let result = "";
+        if(a>b && a>c){
+            document.getElementById("result").innerHTML="a là số lớn nhất "
+        }else if (b>a&&b>c){
+            document.getElementById("result").innerHTML="b là số lớn nhất"
+        }else  {
+
+            document.getElementById("result").innerHTML="c là số lớn nhất"
+        }
+    }
+</script>

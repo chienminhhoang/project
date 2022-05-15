@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type ="text" id="a">
+<label for="a">nhap so a</label><br>
+<input type="text" id="b">
+<label for="b">nhap so b</label>
+<input type="text" id="c">
+<label for="b">nhap so c</label>
+<button onclick ="check()">check</button><br>
+<p id="result"></p>
+
+</body>
+</html>
+<script>
+    function check() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        let d = (b*b)-(4*a*c)
+        let x = -c/b;
+        if(a==0 && b != 0 && c != 0){
+            document.getElementById("result").innerHTML="phuong trinh co mot nghiem la:"+x;
+
+        } else if (a !=0 && b == 0 && c != 0){
+            document.getElementById("result").innerHTML="phuong trinh  vo  nghiem"
+        }
+        else if (a !=0 && b != 0 && c == 0){
+            document.getElementById("result").innerHTML="phuong trinh co vo so nghiem"
+
+        }
+        else if (d >= 0){
+            document.write("x1="+((-b + Math.sqrt(d)) / (2*a)))
+            document.write("<br>")
+            document.write("x1="+((-b - Math.sqrt(d)) / (2*a)))
+        } else{
+            document.write("phuong trinh vo nghiem")
+        }
+
+    }
+
+</script>

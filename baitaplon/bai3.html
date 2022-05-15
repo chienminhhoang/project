@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type ="text" id="a">
+<label for="a">nhap so a</label><br>
+<button onclick ="check()">check</button><br>
+<p id="result"></p>
+</body>
+<script>
+    function check(){
+        let a = document.getElementById("a").value;
+       let b = a*a
+
+        let result = "";
+        if (b>0){
+            document.getElementById("result").innerHTML="day la hinh chu nhat co s la:"+b
+
+        }else { document.getElementById.innerHTML="day khong phai hinh vuong"
+
+        }
+
+
+
+    }
+</script>
+</html>

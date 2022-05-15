@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Nếu thời gian là trước 10:00 giờ , tạo ra một câu chào là "Good morning",
+nếu không, nếu thời gian chưa tới 20:00 giờ, câu chào sẽ là "Good day",
+ nếu không (sau 20:00 giờ) lời cháo sẽ là "Good evening":-->
+
+</body>
+</html>
+<script>
+ //    let curdate = new Date()
+ //    let hours =curdate.getHours()
+ // if(hours<10){
+ //     greeting="good morning";
+ // }else if(hours<20){
+ //     greeting="good day"
+ // }else {
+ //     greeting="good evening"
+ // }
+ //
+ //  alert(greeting)
+ // bai 2 Sử dụng cấu trúc if…else, viết chương trình nhập vào một chuỗi câu trả lời cho câu hỏi
+ // “What is the “official” name of JavaScript?”. Nếu câu trả lời nhập vào là “ECMAScript”,
+ // thì hiển thị thông báo: “Right!”, ngược lại hiển thị thông báo: “Didn’t know? ECMAScript!”
+ // let value = prompt ("What is the “official”' name of JavaScript?',");
+ // if ( value == "ECMAScirpt"){
+ //     alert("rigt!");}
+ //
+ //     else {
+ //         alert("you don't now ECMAScript!");
+ //     }
+ //bai 3
+ // Nếu tên nhập vào là Admin thì yêu cầu nhập mật khẩu.
+ //     Nếu mật khẩu là TheMaster thì in ra chuỗi Welcome.
+ //     Nếu mật khẩu nhập vào là null in ra chuỗi Canceled.
+ //     Còn lại in ra chuỗi Wrong password.
+ //     Nếu tên nhập vào là null in ra chuỗi canceld.
+ //     Còn lại in ra chuỗi “I don’t know you"
+ let username = prompt("who are you");
+ if (username == "Admin");{
+
+     let pass = prompt('password?','')
+     if (pass == "the master") {
+         alert('welcome')
+     }
+     else if (pass == "null") {
+         alert('Canceled')
+     }
+     else  {
+         alert('Wrong password')
+     }
+ }
+
+ else {
+     alert("I don't know you")
+ }
+
+
+</script>

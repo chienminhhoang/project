@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type ="text" id="a">
+<label for="a">nhap so a</label>
+<button onclick="check()"> check</button>
+<p id ="result"></p>
+</body>
+</html>
+<script>
+function check(){
+    let a = document.getElementById("a").value;
+    let result="";
+    if (a>0){
+        document.getElementById("result").innerHTML="a la so duong"
+
+    }else { (a<0)
+        document.getElementById("result").innerHTML="a la so am"
+    }
+}
+</script>

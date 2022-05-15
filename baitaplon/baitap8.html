@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type ="text" id="a">
+<label for="a">nhap so a</label><br>
+<button onclick ="check()">check</button><br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    function  check(){
+        let a = document.getElementById("a").value;
+        if (a<120 && a>0){
+        document.getElementById("result").innerHTML="day la tuoi cua mot nguoi"
+        } else {
+            document.getElementById("result").innerHTML="day khong phai tuoi cua mot nguoi"
+        }
+    }
+</script>
