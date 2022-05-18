@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type ="text" id="a" oninput="calculate()"/> is : <span id="result"></span>
+
+
+
+</body>
+</html>
+<script>
+// function sum(a,b){
+//     let tong = 0
+//     for ( let i= a; i <=b ; i++) {
+//         tong += i;
+//
+//     }return tong;}
+//     alert("sum from 3 to 97:"+sum(3,97))-->
+<!--vidukhac-->
+function square(number){
+    let result= number*number
+    return result
+}
+
+<!--}-->
+<!--let squareof10= square(10)-->
+<!--document.write("square of 10 is:"+squareof10)-->
+function calculate(){
+    let a = document.getElementById("a").value;
+    let result= square(a);
+    document.getElementById("result").innerHTML = result;
+}
+
+</script>

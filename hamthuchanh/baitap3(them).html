@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+<input type ="number" id="inputMeter" placeholder="meter" >
+<button onclick ="check()">đổi</button><br>
+</p>
+<p>
+    feet:<span id="outputFeet"></span>
+</p>
+</body>
+</html>
+
+
+<script>
+    function check(){
+        let inputMeter = document.getElementById("inputMeter").value
+      let valNum=parseFloat(inputMeter)
+       document.getElementById("outputFeet").innerHTML= (valNum * 3.28);
+    }
+</script>
