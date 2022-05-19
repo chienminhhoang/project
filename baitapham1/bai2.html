@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id ="a" placeholder="nhap so a">
+<button onclick="check()">bamvaode</button><br>
+<p id ="result"></p>
+
+</body>
+</html>
+<script>
+    function check(){
+        let a= document.getElementById("a").value
+        let valNum= parseInt(a)
+        document.getElementById("result").innerHTML=(valNum+1)
+
+    }
+</script>

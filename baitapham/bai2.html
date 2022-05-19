@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bảng đổi số đo</h1>
+<p>
+<input type="number" id="inputMeter" placeholder="meter">
+<button onClick="check()">đổi</button>
+<br>
+</p>
+<p>
+<p>
+    feet:<span id="outputFeet"></span>
+</p>
+
+<p>
+<input type="number" id="inputFeet" placeholder="feet">
+<button onclick="doi()">đổi</button>
+<br>
+</p>
+<p>
+    met:<span id="outputMeter"></span>
+</p>
+</body>
+</html>
+<script>
+ function check(){
+    let inputMeter= document.getElementById("inputMeter").value
+     let valNum= parseFloat(inputMeter)
+     document.getElementById("outputFeet").innerHTML= (valNum*3.28)
+ }
+ function doi(){
+     let inputFeet = document.getElementById("inputFeet").value
+     let valNum2=parseFloat(inputFeet)
+     document.getElementById("outputMeter").innerHTML= (valNum2/3.28)
+
+ }
+</script>

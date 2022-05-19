@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id ="a" placeholder="nhap so a">
+<button onclick="check()">bai1</button><br>
+<button onclick="bai2()">bai2s</button>
+<button onclick="bai2b()">bai2v</button>
+<button onclick="bai3()">bai3</button>
+<button onclick="bai4()">bai4</button>
+<button onclick="bai6()">bai6</button>
+<p id ="result"></p>
+<p id="result2"></p>
+<p id="result2b"></p>
+<p id="result3"></p>
+<p id="result4"></p>
+<p id="result6"></p>
+</body>
+</html>
+<script>
+    function check(){
+        let a= document.getElementById("a").value
+        let bp= a*a
+          document.getElementById("result").innerHTML=("binh phuong cua :"+"&nbsp;" +a+"&nbsp;"+ "la:"+"&nbsp" +bp);
+    }
+    function bai2(){
+        let a= document.getElementById("a").value
+        let s= 3.14*(parseFloat(a)*a)
+        document.getElementById("result2").innerText="s cua hinh tron la"+s
+    }
+    function bai2b(){
+        let a=document.getElementById("a").value
+        let v= 2*3.14*parseFloat(a)
+        document.getElementById("result2b").innerText="v cua hinh tron la:"+v
+    }
+    function bai3(){
+        let a= document.getElementById("a").value
+        let gt= 1
+        for (let i = a; i >0 ; i--) {
+            gt= gt*i
+
+            document.getElementById("result3").innerHTML ="giai thua cua"+"&nbsp;" +a+"&nbsp;" + "la:"+"&nbsp;" +gt
+            
+        }
+
+
+    }
+    function bai4(){
+        let a=  document.getElementById("a").value
+        if(parseInt(a)){
+            document.getElementById("result4").innerText="true"
+        }
+        else document.getElementById("result4").innerText="false"
+    }
+    function bai6(){
+        let a=document.getElementById("a").value
+        if(parseInt(a)>0){
+            document.getElementById("result6").innerText="true"
+        }else document.getElementById("result6").innerText="false"
+    }
+
+
+</script>
