@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập từ muốn tra:</p>
+<input type="text" id="trans">
+<button onclick ="check()">Dịch</button>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    function check(){
+        let arrEng=["banana", "apple", "lemon", "melon", "mango"]
+        let arrVie=["chuối", "táo", "chanh", "dưa hấu", "xoài"]
+        let tuTra = document.getElementById("trans").value
+        let flag=true
+        for (let i = 0; i <arrEng.length ; i++) {
+            if(tuTra==arrEng[i]){
+                document.getElementById("result").innerHTML = arrVie[i]
+                flag=true
+                break
+            }
+            if(tuTra==arrVie[i]){
+                document.getElementById("result").innerHTML = arreng[i]
+                flag=true
+                break
+            }if(!flag)
+                document.getElementById("result").innerHTML ="không tìm thấy từ tra"
+
+        }
+    }
+</script>
